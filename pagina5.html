@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Shows - Billie Eilish</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      text-align: center;
+      padding: 20px;
+      background-color: #0B1A34;
+      font-family: "Cinzel", serif;
+      color: #F5EEDC;
+    }
+
+    h1, h3 {
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 6px #000;
+    }
+
+    /* 🌸 Navbar Vintage */
+    .navbar-vintage {
+      background-color: rgba(201, 186, 155, 0.15);
+      border-bottom: 2px solid #C9BA9B;
+      box-shadow: 0 2px 10px rgba(255, 230, 180, 0.3);
+      padding: 10px 0;
+    }
+
+    .navbar-vintage .navbar-brand {
+      font-family: 'Great Vibes', cursive;
+      color: #F5EEDC;
+      font-size: 2rem;
+      text-shadow: 1px 1px 6px #000;
+    }
+
+    .navbar-vintage .nav-link {
+      color: #EAD7B7 !important;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    .navbar-vintage .nav-link:hover {
+      color: #C9BA9B !important;
+      transform: scale(1.05);
+    }
+
+    /* 🎤 Galeria de Shows */
+    .show-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 45px;
+      margin: 60px auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    .show-gallery img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid #C9BA9B;
+      filter: sepia(45%) contrast(92%) brightness(88%);
+      box-shadow: 0px 0px 18px rgba(255, 230, 180, 0.5);
+      transition: 0.4s;
+    }
+
+    .show-gallery img:hover {
+      transform: scale(1.03);
+      filter: sepia(20%) brightness(100%);
+      box-shadow: 0px 0px 25px rgba(255, 230, 180, 0.6);
+    }
+
+    /* ✨ Quadro de texto */
+    .quadro-vintage {
+      width: 75%;
+      margin: 40px auto 20px;
+      padding: 25px;
+      background: rgba(201, 186, 155, 0.08);
+      border: 2px solid #C9BA9B;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 230, 180, 0.3);
+      color: #F5EEDC;
+      text-align: center;
+    }
+
+    .quadro-vintage h2 {
+      color: #EAD7B7;
+      font-size: 1.8rem;
+    }
+
+    .quadro-vintage p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-top: 10px;
+    }
+
+    /* ✦ Separador decorativo */
+    .decoracao {
+      width: 60%;
+      margin: 50px auto 20px;
+      border-top: 2px solid #C9BA9B;
+      position: relative;
+    }
+
+    .decoracao::before {
+      content: "✦";
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #0B1A34;
+      color: #EAD7B7;
+      font-size: 20px;
+      padding: 0 10px;
+    }
+
+    /* 🌟 Imagem e texto de destaque */
+    .imagem-destaque {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 60px auto;
+      max-width: 1200px;
+      padding-left: 40px;
+      gap: 40px;
+    }
+
+    .imagem-destaque img {
+      width: 380px;
+      height: 480px;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 3px solid #C9BA9B;
+      box-shadow: 0 0 30px rgba(255, 230, 180, 0.6);
+      filter: sepia(35%) contrast(95%) brightness(90%);
+      transition: 0.5s;
+    }
+
+    .imagem-destaque img:hover {
+      transform: scale(1.04);
+      filter: sepia(15%) brightness(100%);
+      box-shadow: 0 0 40px rgba(255, 230, 180, 0.8);
+    }
+
+    .texto-destaque {
+      max-width: 550px;
+      text-align: left;
+      color: #F5EEDC;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      background: rgba(201, 186, 155, 0.08);
+      border-left: 3px solid #C9BA9B;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(255, 230, 180, 0.3);
+    }
+
+    .texto-destaque h3 {
+      font-family: 'Great Vibes', cursive;
+      color: #EAD7B7;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    /* ⚜️ Rodapé Vintage */
+    footer {
+      margin-top: 60px;
+      padding: 15px 0;
+      background-color: rgba(201, 186, 155, 0.1);
+      border-top: 1px solid #C9BA9B;
+      color: #EAD7B7;
+      font-size: 0.95rem;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    footer span {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.2rem;
+      color: #F5EEDC;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌸 Navbar Vintage -->
+<nav class="navbar navbar-expand-lg navbar-vintage">
+  <div class="container">
+    <a class="navbar-brand" href="#">Billie Eilish</a>
+    <div class="collapse navbar-collapse justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="pagina1.html">Biografia</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina2.html">Discografia</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina4.html">Prêmios</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina5.html">Shows</a></li>
+        <li class="nav-item"><a class="nav-link active" href="pagina3.html">Memórias</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <h1 class="mt-5">Shows Inesquecíveis</h1>
+
+  <section class="quadro-vintage">
+    <h2>Billie Eilish ao vivo</h2>
+    <p>
+      Billie Eillish, é uma inspiração e representatividade de todas as emoções expressadas em cada música, 
+      da forma mais melancólica e intensa possível, um verdadeiro símbolo de sentimentos complexos.
+       Como ela mesmo disse, "this is exacly how i feel, u hear me?" - Marina e Rafaella.
+    </p>
+  </section>
+
+  <div class="show-gallery">
+    <img src="imagens/c.jpg" alt="Billie Eilish Show 1">
+    <img src="imagens/bandeira.jpg" alt="Billie Eilish Show 2">
+    <img src="imagens/u.jpg" alt="Billie Eilish Show 3">
+    <img src="imagens/clipe.jpg" alt="Billie Eilish Show 4">
+    <img src="imagens/d.jpg" alt="Billie Eilish Show 5">
+  </div>
+
+  <!-- 🌟 Imagem e texto de destaque -->
+  <div class="imagem-destaque">
+    <img src="imagens/lola.jpg" alt="Billie Eilish no Brasil 2023">
+    <div class="texto-destaque">
+      <h3>Billie Eilish no Brasil — 2023</h3>
+      <p>
+        Em 2023, Billie Eilish trouxe sua energia única ao Brasil, emocionando fãs em apresentações inesquecíveis.  
+        Sua passagem pelo país marcou um reencontro intenso com o público brasileiro, que cantou cada verso com paixão.  
+        Com uma produção grandiosa e momentos de pura emoção, Billie deixou uma lembrança viva nos corações de todos  
+        que estiveram presentes — um verdadeiro espetáculo de conexão, arte e sinceridade.
+      </p>
+    </div>
+  </div>
+
+  <div class="decoracao"></div>
+
+  <footer>
+    <p>© 2025 | <span>Rafaella Torres</span> e <span>Marina Nobre</span> — 2º EMTI</p>
+  </footer>
+
+</body>
+</html>

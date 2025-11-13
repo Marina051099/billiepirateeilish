@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Memórias - Billie Eilish</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      text-align: center;
+      padding: 20px;
+      background-color: #0B1A34;
+      font-family: "Cinzel", serif;
+      color: #F5EEDC;
+    }
+
+    h1, h3, h2 {
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 6px #000;
+    }
+
+    /* 🌟 Barra superior vintage */
+    .navbar-vintage {
+      background-color: rgba(201, 186, 155, 0.15);
+      border-bottom: 2px solid #C9BA9B;
+      box-shadow: 0 2px 10px rgba(255, 230, 180, 0.3);
+      padding: 10px 0;
+    }
+
+    .navbar-vintage .navbar-brand {
+      font-family: 'Great Vibes', cursive;
+      color: #F5EEDC;
+      font-size: 2rem;
+      text-shadow: 1px 1px 6px #000;
+    }
+
+    .navbar-vintage .nav-link {
+      color: #EAD7B7 !important;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    .navbar-vintage .nav-link:hover {
+      color: #C9BA9B !important;
+      transform: scale(1.05);
+    }
+
+    /* ✨ Título */
+    h1 {
+      font-family: 'Great Vibes', cursive; 
+      font-size: 3rem; 
+      color: #EAD7B7; 
+      text-shadow: 2px 2px 8px #000;
+      letter-spacing: 3px;
+      margin-top: 50px;
+      margin-bottom: 40px;
+    }
+
+    /* 🌿 Galeria de Fotos */
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      justify-items: center;
+    }
+
+    .gallery-item {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 2px solid #C9BA9B;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s, box-shadow 0.3s;
+      width: 100%;
+      max-width: 280px;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-bottom: 2px solid rgba(212, 175, 55, 0.5);
+      filter: brightness(0.9) contrast(1.1) sepia(0.2);
+      transition: filter 0.3s;
+    }
+
+    .gallery-item img:hover {
+      filter: brightness(1) contrast(1.2) sepia(0);
+    }
+
+    /* ⚜️ Rodapé Vintage */
+    footer {
+      margin-top: 60px;
+      padding: 15px 0;
+      background-color: rgba(201, 186, 155, 0.1);
+      border-top: 1px solid #C9BA9B;
+      color: #EAD7B7;
+      font-size: 0.95rem;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    footer span {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.2rem;
+      color: #F5EEDC;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌸 Navbar Vintage -->
+<nav class="navbar navbar-expand-lg navbar-vintage">
+  <div class="container">
+    <a class="navbar-brand" href="#">Billie Eilish</a>
+    <div class="collapse navbar-collapse justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="pagina1.html">Biografia</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina2.html">Discografia</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina4.html">Prêmios</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina5.html">Shows</a></li>
+        <li class="nav-item"><a class="nav-link active" href="pagina3.html">Memórias</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ✨ Título da Página -->
+<h1>Memórias</h1>
+
+<!-- 🌿 Galeria de Fotos -->
+<div class="gallery-container">
+  <div class="gallery-item"><img src="imagens/a.jpg" alt="Billie 1"></div>
+  <div class="gallery-item"><img src="imagens/b.jpg" alt="Billie 2"></div>
+  <div class="gallery-item"><img src="imagens/kid.jpg" alt="Billie criança"></div>
+  <div class="gallery-item"><img src="imagens/baby.jpg" alt="Billie bebê"></div>
+  <div class="gallery-item"><img src="imagens/bone.jpg" alt="Boneca Billie"></div>
+  <div class="gallery-item"><img src="imagens/billierosa.jpg" alt="Billie rosa"></div>
+  <div class="gallery-item"><img src="imagens/bii.jpg" alt="Billie"></div>
+  <div class="gallery-item"><img src="imagens/teenager.jpg" alt="Billie adolescente"></div>
+  <div class="gallery-item"><img src="imagens/cinza.jpg" alt="Billie cinza"></div>
+  <div class="gallery-item"><img src="imagens/blue.jpg" alt="Billie azul"></div>
+  <div class="gallery-item"><img src="imagens/verde.jpg" alt="Billie verde"></div>
+  <div class="gallery-item"><img src="imagens/loira.jpg" alt="Billie loira"></div>
+  <div class="gallery-item"><img src="imagens/red.jpg" alt="Billie vermelha"></div>
+  <div class="gallery-item"><img src="imagens/bil.jpg" alt="Billie bil"></div>
+  <div class="gallery-item"><img src="imagens/show.jpg" alt="Billie no show"></div>
+  <div class="gallery-item"><img src="imagens/suit.jpg" alt="Billie de terno"></div>
+  <div class="gallery-item"><img src="imagens/dog.jpg" alt="Billie com cachorro"></div>
+  <div class="gallery-item"><img src="imagens/2025.jpg" alt="Billie 2025"></div>
+  <div class="gallery-item"><img src="imagens/black.jpg" alt="Billie preta"></div>
+  <div class="gallery-item"><img src="imagens/guitarra.jpg" alt="Billie com guitarra"></div>
+</div>
+
+<!-- ⚜️ Rodapé Vintage -->
+<footer>
+  <p>© 2025 | <span>Rafaella Torres</span> e <span>Marina Nobre</span> — 2º EMTI</p>
+</footer>
+
+</body>
+</html>

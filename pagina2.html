@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Discografia</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      text-align: center;
+      padding: 30px;
+      background-color: #0B1A34;
+      font-family: "Cinzel", serif;
+      color: #F5EEDC;
+    }
+
+    h1, h2, h3 {
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 6px #000;
+    }
+
+    .navbar-vintage {
+      background-color: rgba(201, 186, 155, 0.15);
+      border-bottom: 2px solid #C9BA9B;
+      box-shadow: 0 2px 10px rgba(255, 230, 180, 0.3);
+      padding: 10px 0;
+    }
+
+    .navbar-vintage .navbar-brand {
+      font-family: 'Great Vibes', cursive;
+      color: #F5EEDC;
+      font-size: 2rem;
+      text-shadow: 1px 1px 6px #000;
+    }
+
+    .navbar-vintage .nav-link {
+      color: #EAD7B7 !important;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    .navbar-vintage .nav-link:hover {
+      color: #C9BA9B !important;
+      transform: scale(1.05);
+    }
+
+    .album-card {
+      width: 70%;
+      margin: 30px auto;
+      padding: 25px;
+      background: rgba(201, 186, 155, 0.08);
+      border: 2px solid #C9BA9B;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 230, 180, 0.3);
+      color: #F5EEDC;
+      text-align: center;
+      transition: 0.4s;
+    }
+
+    .album-card:hover {
+      transform: scale(1.02);
+      background: rgba(201, 186, 155, 0.15);
+      box-shadow: 0 0 25px rgba(255, 230, 180, 0.5);
+    }
+
+    .album-card img {
+      width: 230px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 14px rgba(255, 230, 180, 0.5);
+      filter: sepia(45%) contrast(92%) brightness(88%);
+    }
+
+    .decoracao {
+      width: 60%;
+      margin: 40px auto;
+      border-top: 2px solid #C9BA9B;
+      position: relative;
+    }
+
+    .decoracao::before {
+      content: "✦";
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #0B1A34;
+      color: #EAD7B7;
+      font-size: 20px;
+      padding: 0 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 🌸 Navbar Vintage -->
+<nav class="navbar navbar-expand-lg navbar-vintage">
+  <div class="container">
+    <a class="navbar-brand" href="#">Billie Eilish</a>
+    <div class="collapse navbar-collapse justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="pagina1.html">Biografia</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina2.html">Discografia</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina4.html">Prêmios</a></li>
+        <li class="nav-item"><a class="nav-link" href="pagina5.html">Shows</a></li>
+        <li class="nav-item"><a class="nav-link active" href="pagina3.html">Memórias</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+  <h1 class="mt-4">Discografia</h1>
+
+  <!-- Álbum 1 -->
+  <div class="album-card">
+   
+    <h2 class="mt-3">Don't Smile at Me</h2>
+    <p>2017</p>
+    <img src="billie1.jpg" alt="Billie Eilish - Don't Smile at Me Extra" class="img-fluid rounded shadow mt-4" style="max-width: 350px;">
+  </div>
+
+  <div class="decoracao"></div>
+
+  <!-- Álbum 2 -->
+  <div class="album-card">
+    
+    <h2 class="mt-3">When We All Fall Asleep, Where Do We Go?</h2>
+    <p>2019</p>
+    <img src="BILLIE2.jpg" alt="Billie Eilish - When We All Fall Asleep Extra" class="img-fluid rounded shadow mt-4" style="max-width: 350px;">
+  </div>
+
+  <div class="decoracao"></div>
+
+  <!-- Álbum 3 -->
+  <div class="album-card">
+ 
+    <h2 class="mt-3">Happier Than Ever</h2>
+    <p>2021</p>
+    <img src="billie3.jpg" alt="Billie Eilish - Happier Than Ever Extra" class="img-fluid rounded shadow mt-4" style="max-width: 350px;">
+  </div>
+
+  <div class="decoracao"></div>
+
+  <!-- Álbum 4 -->
+  <div class="album-card">
+  
+    <h2 class="mt-3">Hit Me Hard and Soft</h2>
+    <p>2024</p>
+    <!-- Imagem extra -->
+    <img src="billie4.jpg" alt="Billie Eilish - Hit Me Hard and Soft Extra" class="img-fluid rounded shadow mt-4" style="max-width: 350px;">
+  </div>
+  <!-- ⚜️ Rodapé Vintage -->
+  <footer>
+    <p>© 2025 | <span>Rafaella Torres</span> e <span>Marina Nobre</span> — 2º EMTI</p>
+  </footer>
+
+
+</body>
+</html>

@@ -68,6 +68,50 @@
       color: #F5EEDC;
     }
 
+    /* 🌟 Barra superior vintage */
+    .navbar-vintage {
+      background-color: rgba(201, 186, 155, 0.15);
+      border-bottom: 2px solid #C9BA9B;
+      box-shadow: 0 2px 10px rgba(255, 230, 180, 0.3);
+      padding: 10px 0;
+    }
+
+    .navbar-vintage .navbar-brand {
+      font-family: 'Great Vibes', cursive;
+      color: #F5EEDC;
+      font-size: 2rem;
+      text-shadow: 1px 1px 6px #000;
+    }
+
+    .navbar-vintage .nav-link {
+      color: #EAD7B7 !important;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    .navbar-vintage .nav-link:hover {
+      color: #C9BA9B !important;
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 350px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      filter: sepia(45%) contrast(92%) brightness(88%);
+      box-shadow: 0px 0px 14px rgba(255, 230, 180, 0.5);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    table {
+      border: 2px solid #C9BA9B;
+      background-color: rgba(255, 245, 225, 0.08);
+      color: #F5EEDC;
+    }
+
     .btn-vintage {
       background-color: #C9BA9B;
       border: none;
@@ -183,15 +227,9 @@
 <nav class="navbar navbar-expand-lg navbar-vintage">
   <div class="container">
     <a class="navbar-brand" href="#">Billie Eilish</a>
-
-    <!-- 🔹 Botão hamburguer (adicionado para celular) -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+    <div class="collapse navbar-collapse justify-content-center">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="pagina1.html">Biografia</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Biografia</a></li>
         <li class="nav-item"><a class="nav-link" href="pagina2.html">Discografia</a></li>
         <li class="nav-item"><a class="nav-link" href="pagina4.html">Prêmios</a></li>
         <li class="nav-item"><a class="nav-link" href="pagina5.html">Shows</a></li>
@@ -202,22 +240,23 @@
 </nav>
 
 <!-- ✨ Título da Página -->
-<h1 class="mt-5 mb-4" 
+<h1 class="mt-5 mb-4"
     style="
-      font-family: 'Great Vibes', cursive; 
-      font-size: 3rem; 
-      color: #EAD7B7; 
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #EAD7B7;
       text-shadow: 2px 2px 8px #000;
       letter-spacing: 3px;">
  Billie Eilish
 </h1>
 
-  <img src="https://lorena.r7.com/wp-content/uploads/2025/05/post_54669.jpg" 
-       alt="Foto da Billie Eilish" 
+
+  <img src="https://lorena.r7.com/wp-content/uploads/2025/05/post_54669.jpg"
+       alt="Foto da Billie Eilish"
        class="img-fluid rounded shadow mb-4"
        style="max-width: 350px;">
 
-  <!--  BIOGRAFIA COM QUADRO VINTAGE --> 
+  <!--  BIOGRAFIA COM QUADRO VINTAGE -->
   <section id="biografia" class="quadro-vintage">
     <h2>Biografia</h2>
     <p>
@@ -236,8 +275,8 @@
   <!-- ✨ Separador decorativo -->
   <div class="decoracao"></div>
 
-  <img src="billielindaa.avif" 
-       alt="Foto da Billie Eilish" 
+  <img src="billielindaa.avif"
+       alt="Foto da Billie Eilish"
        class="img-fluid rounded shadow mb-4"
        style="max-width: 350px; margin-top: 40px;">
 
@@ -256,3 +295,7 @@
 
 </body>
 </html>
+
+
+
+
